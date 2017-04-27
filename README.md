@@ -14,7 +14,7 @@ These instructions assume macOS, with XCode and homebrew already installed.
 ```bash
 $ brew tap homebrew/science
 $ brew install --HEAD opencv --with-ffmpeg
-$ echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> bubblewrap-env/lib/site-packages/homebrew.pth
+$ echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> bubblewrap-env/lib/python2.7/site-packages/homebrew.pth
 ```
 
 #### Easy Way:
