@@ -1,3 +1,6 @@
+# Hack. :)
+import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")
+
 # Standard imports
 import cv2;
 import numpy as np;
