@@ -33,7 +33,23 @@ Prerequisites:
 3. Here's where you hope I took good notes.  
   `pip install -r requirements.txt`
 4. `python Trial1.py` should do it! 💁✨ (Or, right-click running in PyCharm or whatever you're using)
+    * To deactivate the virtualenv, run `deactivate`
 
-#### License:
+#### 📹 On Webcams
+
+Sigh. Getting a Logitech c92blah to mount is a very curious matter indeed.
+
+###### The Facts:
+
+* OpenCV does not play nicely with multiple webcams on the same USB hub. The thing with a MacBook,
+  however, is that everything is on the same USB Hub, because you're on a portable computer.
+* To mount your external Webcam as the default (and only😉) webcam,
+    1. Open up the Photo Booth app in Mac.
+    2. Plug in your webcam.
+    3. Under "Cameras," select your external one. Repeat and toggle steps 1 and 2 until the desired
+    webcam is labeled as the "default one."
+    4. Test with the Camera Script I wrote in the repository. It returns a live feed in a new window.
+
+# License:
 * I'm sorry.
 * WTFPL
