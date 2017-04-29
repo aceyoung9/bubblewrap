@@ -8,11 +8,17 @@ import cv2;
 # In case you need to check your python version
 # print cv2.__version__;
 
-# Read image
-im = cv2.imread("test-images/fuzzy_blurry_bubble.jpg", 0)
+cap = cv2.VideoCapture(0)
 
-edges = cv2.Canny(im, 0, 500)
+while True:
+    ret, img = cap.read()
 
-# Show keypoints
-cv2.imshow("Edges", edges)
-cv2.waitKey(0)
+    edges = cv2.Canny(img, 0, 500)
+    cv2.imshow("input", edges)
+
+    key = cv2.waitKey(10)
+    if key == 27:
+        break
+
+cv2.destroyAllWindows()
+cv2.VideoCapture(0).release()
