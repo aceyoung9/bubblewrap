@@ -14,7 +14,7 @@ class TestUSBWebcamDidMount(unittest.TestCase):
 
     def test_mount(self):
         ret0, frame0 = self.cap0.read()
-        self.assertTrue(ret0, 'Cam 1 ain\'t mounting.')
+        self.assertTrue(ret0, 'Cam 0 ain\'t mounting.')
 
         ret1, frame1 = self.cap1.read()
         self.assertTrue(ret1, 'Cam 1 ain\'t mounting.')
