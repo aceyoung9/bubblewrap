@@ -11,12 +11,14 @@ These instructions assume macOS, with XCode and homebrew already installed.
   * ffmpeg
     * `brew install ffmpeg`
   * OpenCV3
-    * `brew install python python3`
+    * `brew install python python3`, probably.
 ```bash
 $ brew tap homebrew/science
 $ brew install --HEAD opencv3 --with-ffmpeg
 $ echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
 ```
+    * Also, brew will suggest additional instructions to follow, if you need to have this software first in your PATH.
+      which we do.
 
 #### Easy Way:
 ??????
