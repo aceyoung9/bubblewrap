@@ -5,6 +5,7 @@ import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")
 import cv2;
 import numpy as np;
 
+# In case you need to check your python version
 # print cv2.__version__;
 
 # Read image
@@ -29,7 +30,7 @@ params.filterByCircularity = False
 # params.minCircularity = 0.85
 
 # Set up the detector
-detector = cv2.SimpleBlobDetector(params)
+detector = cv2.SimpleBlobDetector_create(params)
 
 # Detect blobs.
 keypoints = detector.detect(im)

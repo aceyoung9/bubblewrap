@@ -10,10 +10,12 @@ These instructions assume macOS, with XCode and homebrew already installed.
 
   * ffmpeg
     * `brew install ffmpeg`
-  * OpenCV
+  * OpenCV3
+    * `brew install python python3`
 ```bash
 $ brew tap homebrew/science
-$ brew install --HEAD opencv --with-ffmpeg
+$ brew install --HEAD opencv3 --with-ffmpeg
+$ echo /usr/local/opt/opencv3/lib/python2.7/site-packages >> /usr/local/lib/python2.7/site-packages/opencv3.pth
 ```
 
 #### Easy Way:
@@ -53,3 +55,6 @@ Sigh. Getting a Logitech c92blah to mount is a very curious matter indeed.
 # License:
 * I'm sorry.
 * WTFPL
+
+# Further Reading
+* [Guide for installing OpenCV3 with Python 2](http://www.pyimagesearch.com/2016/12/19/install-opencv-3-on-macos-with-homebrew-the-easy-way/)
