@@ -4,7 +4,7 @@ import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")
 import cv2
 import numpy as np
 
-img = cv2.imread('test-images/still2.jpg', 0)
+img = cv2.imread('test-images/canny_bubble.jpg', 0)
 # img = cv2.medianBlur(img,5)
 
 blurry = cv2.GaussianBlur(img, (15, 15), 20)
@@ -14,7 +14,7 @@ circles = cv2.HoughCircles(blurry,
                            cv2.HOUGH_GRADIENT,
                            1,
                            len(img[0])/5,
-                           param1=50, param2=30, minRadius=10, maxRadius=len(img) / 3)
+                           param1=50, param2=50, minRadius=10, maxRadius=len(img) / 3)
 
 circles = np.uint16(np.around(circles))
 for i in circles[0,:]:
